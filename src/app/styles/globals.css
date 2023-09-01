@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-size: calc(14px + (20.56 - 14) * ((100vw - 280px) / (1920 - 280)));
+  overflow-x: hidden;
+}
+
+body {
+  background-color: theme('colors.background');
+  overflow-x: hidden;
+  cursor: url('../../assets/img/cursor.png'), auto;
+}
+
+a {
+ cursor: url('../../assets/img/pointer.png'), auto;
+}
+.pointer {
+  cursor: url('../../assets/img/pointer.png'), auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scroll);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, theme(colors.purple));
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, theme(colors.pink));
+}
